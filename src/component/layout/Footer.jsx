@@ -2,6 +2,9 @@ import React from 'react'
 import Container from '../Container'
 import Image from '../Image'
 import Logo from '../../assets/Tronix.png'
+import Mastar from '../../assets/master card.png'
+import visa from '../../assets/Visa.png'
+import Paypal from '../../assets/paypal.png'
 import Paragraph from '../Paragraph'
 import Flex from '../Flex'
 import { BiPhone, BiLogoInstagram, BiLogoTwitter, BiLogoFacebookSquare } from 'react-icons/bi'
@@ -11,6 +14,7 @@ import List from '../List'
 
 const Footer = () => {
   return (
+    <>
     <Container className="flex">
       <div className='w-2/5'>
         <Image src={Logo}/>
@@ -60,6 +64,20 @@ const Footer = () => {
         </div>
       </Flex>
     </Container>
+    <Container className="mt-32">
+      <div className=' bg-secound h-[1px] w-full'></div>
+      <Flex className="mt-10">
+        <div className=' w-2/4'>
+          <Paragraph text="Copyright © 2021 Tronix. All Right Reseved"/>
+        </div>
+        <div className=' w-2/4 flex justify-end'>
+          <Image src={Mastar}/>
+          <Image src={visa} className=" px-4"/>
+          <Image src={Paypal}/>
+        </div>
+      </Flex>
+    </Container>
+    </>
   )
 }
 
